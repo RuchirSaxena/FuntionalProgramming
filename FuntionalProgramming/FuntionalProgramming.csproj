@@ -24,10 +24,11 @@
   <ItemGroup>
     <Content Include="app.css" />
     <Content Include="index.html" />
+    <Content Include="Notes.txt" />
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
+    <Content Include="app.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="web.Debug.config">

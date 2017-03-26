@@ -1,0 +1,54 @@
+﻿Functional Programming 
+
+1.In functional programming functions are values , functions can be strored in a variable and can be send across
+other functions also or assingn to other variables
+Advantages:
+1. We need to write less code
+2.
+
+
+var tripple=function (x) {
+    return x * 3;
+}
+
+Composition =>
+Where we can put one function to another funtion allows us to compose lot of function into bigger function
+
+Higer order function 
+1.Filter => Its a function with array that allows another function (an anonymous fuction) to be passed in it
+to get the new filtered array 
+
+//Filter function
+
+var dogs = animals.filter(function(animal) {
+    return animal.species === "dog";
+});
+
+document.write(JSON.stringify(dogs));
+
+2.Map =>Returns a new array instead of the object , we can also create completely a new object using map
+
+var names = animals.map(function(animal) {
+    return animal.name;
+});
+
+var names = animals.map(function(animal) {
+    return animal.name +"is a"+ animal.species;
+});
+
+3.Reduce => It can be used for any list transformation
+
+var orders = [
+{ amount: 200 },
+{ amount: 300 },
+{ amount: 400 },
+{ amount: 500 },
+{ amount: 600 }
+];
+
+var totalOrderAmount = orders.reduce(function (sum, order) {
+    console.log(sum);
+    return sum + order.amount;
+}, 0); //here 0 is the starting amount ie.sum argument value
+
+document.write(totalOrderAmount);//2000
